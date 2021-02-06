@@ -1,0 +1,198 @@
+{
+    "type": [
+        {
+            "name": "轻应用",
+            "describe": "无需下载，即开即用。",
+            "innerproducts": [
+                {
+                    "name": "直播中心",
+                    "third_party": false,
+                    "page_url": "/live/new.html",
+                    "icon": "/live/cgtn.png",
+                    "slug": "看直播，上安播空间！",
+                    "describe": "通过多达数百个直播源和方便的功能，安播空间直播中心是您查询直播源的不二之选。无论是设计还是功能都定会让您耳目一新。",
+                    "tag": "live_center",
+                    "hot": true,
+                    "available": true,
+                    "operation": "打开",
+                    "developer": "0",
+                    "img": [
+                        "https://cdn.cncn3.cn/webstatic/2987a550ebad2/img_20210121_021906.png",
+                        "https://cdn.cncn3.cn/webstatic/5d285d863271f/img_20210121_021918.png"
+                    ],
+                    "dtype": "通用 PWA 应用",
+                    "djrx": "与大多数现代浏览器兼容。"
+                },
+                {
+                    "name": "229视频库",
+                    "third_party": false,
+                    "page_url": "http://v.anbo.space",
+                    "icon": "/live/cgtn.png",
+                    "slug": "“内部资料”聚集地，能拿多少看关系。",
+                    "describe": "有着充足的节目录像和“内部资源”，229视频库为您带来了绝佳的视频体验。无论是在线观看还是快捷下载，更或者是发布视频，都可以被轻松完成。",
+                    "tag": "video_center",
+                    "hot": true,
+                    "available": true,
+                    "operation": "打开",
+                    "developer": "0",
+                    "img": [
+                        "https://cdn.cncn3.cn/webstatic/c553cc0854431/img_20210121_021556.png ",
+                        "https://cdn.cncn3.cn/webstatic/cc26873164b8b/img_20210121_021457.png"
+                    ],
+                    "dtype": "通用 PWA 应用",
+                    "djrx": "与大多数现代浏览器兼容。"
+                },
+                {
+                    "name": "张戴阳生成器",
+                    "third_party": false,
+                    "page_url": "/apps/zhangdaiyang",
+                    "icon": "https://tvax2.sinaimg.cn/crop.0.0.1002.1002.180/d7c254e0ly8gcrdkpguj6j20ru0ruwgt.jpg?KID=imgbed,tva",
+                    "slug": "人人都是张戴阳，人人都能钓大鱼。",
+                    "describe": "",
+                    "tag": "zdy",
+                    "hot": false,
+                    "available": true,
+                    "operation": "打开",
+                    "developer": "0",
+                    "img": [
+                        "https://cdn.cncn3.cn/webstatic/fb7e6efa2b5d0/img_20210121_021228.png"
+                    ],
+                    "dtype": "通用 PWA 应用",
+                    "djrx": "与大多数现代浏览器兼容。"
+                },
+                {
+                    "name": "联播资源库",
+                    "third_party": true,
+                    "page_url": "http://newjie1.tpddns.cn:81/s/ePQBZrg4KyN4ddn",
+                    "icon": "https://img.cncn3.cn/images/4SnU.png",
+                    "slug": "稀缺联播资源，现在获取。",
+                    "describe": "通过以尐新为中心的资源库团队，获取“内部”版本的每日新闻联播不再需要守住发射火箭般的“窗口期”，唾手可得。",
+                    "tag": "newjie_lb",
+                    "hot": true,
+                    "available": true,
+                    "operation": "打开",
+                    "developer": "1",
+                    "img": [
+                        "https://ae01.alicdn.com/kf/Hddff29db493b405987270db0fe5f03a2S.jpg",
+                        "https://ae01.alicdn.com/kf/H72ead29ec73547ec95c0befcc40fb72cc.jpg ",
+                        "https://ae01.alicdn.com/kf/H952e7ffa4c49425498a0569b360b9df3Q.jpg"
+                    ],
+                    "dtype": "通用 PWA 应用",
+                    "djrx": "与大多数现代浏览器兼容。"
+                },
+                {
+                    "name": "电视导播台",
+                    "third_party": false,
+                    "page_url": "http://anbo.space/apps/tv-desk/tv.html",
+                    "icon": "https://img.cncn3.cn/images/47HA.png",
+                    "slug": "如导播般自由切换。",
+                    "describe": "让你身临其境的感受导播的工作。",
+                    "tag": "tv_desk",
+                    "hot": false,
+                    "available": true,
+                    "operation": "打开",
+                    "developer": "0",
+                    "img": [
+                        "https://ae01.alicdn.com/kf/Hb8b1a57a337a4557be1ad3600d9c05b1Y.jpg"
+                    ],
+                    "dtype": "通用 PWA 应用",
+                    "djrx": "与大多数现代浏览器兼容。"
+                },
+                {
+                    "name": "九字稿生成器",
+                    "third_party": false,
+                    "page_url": "/apps/jiuzigao",
+                    "icon": "https://img.cncn3.cn/images/4Ih4.png",
+                    "slug": "九字稿在手里，安全播出在心里。",
+                    "describe": "快速制作和打印九字稿。",
+                    "tag": "jiuzigao",
+                    "hot": false,
+                    "available": false,
+                    "operation": "打开",
+                    "developer": "0",
+                    "img": [
+                        "https://cdn.cncn3.cn/webstatic/9bb2bd27d15c4/img_20210121_020928.png"
+                    ],
+                    "dtype": "通用 PWA 应用",
+                    "djrx": "与大多数现代浏览器兼容。"
+                }
+            ]
+        },
+        {
+            "name": "终端应用",
+            "describe": "简便安装，体验超强。",
+            "innerproducts": [
+                {
+                    "name": "OBS在线包装生成器",
+                    "third_party": false,
+                    "page_url": "https://github.com/agoudbg/OBS-Online-Subtitles",
+                    "icon": "https://p.pstatp.com/origin/138030002765a3ba9fb73",
+                    "slug": "字幕创建，只需一键。",
+                    "describe": "<p>产品简介</p><p>快速创建在线字幕，类似于专业字幕机，只需 OBS。</p><p>使用方法</p><p>1.把此目录解压到某处<br>2.在电脑上建一个服务器。<br> *如果电脑上安装了Python，可以直接运行bat文件，网址为localhost: 229<br>3.打开OBS添加浏览器源，地址为你刚刚创建的服务器地址，宽度设置1080<br>4.运行 阿狗OBS包装管理工具.exe</p><p>管理工具操作Tips</p><p>1.按Enter快速应用设置<br>2.按Tab快速切换焦点</p><p>自定义样式</p><p>style.css可以自定义。</p>",
+                    "tag": "xwpdscq",
+                    "hot": false,
+                    "available": true,
+                    "operation": "查看",
+                    "developer": "0",
+                    "img": [
+                        "https://cdn.cncn3.cn/webstatic/81635e81c4886/img_20210123_220117.png",
+                        "https://cdn.cncn3.cn/webstatic/f60e299784976/img_20210124_113715.png",
+                        "https://cdn.cncn3.cn/webstatic/873913b9622b1/img_20210123_214434.png" ,"https://cdn.cncn3.cn/webstatic/90d5a361608e9/img_20210123_214458.png"
+                    ],
+                    "dtype": "演示文稿",
+                    "djrx": "与 Microsoft Office PowerPoint 2010 或更高版本兼容。"
+                },
+                {
+                    "name": "2套包装PPT模板",
+                    "third_party": false,
+                    "page_url": "https://www.lanzous.com/iascenc",
+                    "icon": "https://img.cncn3.cn/images/42l2.png",
+                    "slug": "PPT包装？用PPT证明。",
+                    "describe": "史上最像的2套19包装PPT模板，就在这里。 ",
+                    "tag": "xwpdscq",
+                    "hot": false,
+                    "available": true,
+                    "operation": "下载",
+                    "developer": "0",
+                    "img": [
+                        "/src/video/2tao.mp4?type=video"
+                    ],
+                    "dtype": "演示文稿",
+                    "djrx": "与 Microsoft Office PowerPoint 2010 或更高版本兼容。"
+                },
+                {
+                    "name": "新闻频道生成器",
+                    "third_party": true,
+                    "page_url": "",
+                    "icon": "https://p.pstatp.com/origin/13824000174f8d036d8e3",
+                    "slug": "随心所欲自定义，频道“大权”交给你。",
+                    "describe": "新现场相机，无需安装app即可圆您荧屏梦！ <br />曾经有一个生成器*一时风光，生成无数梗图。只不过时过境迁，随着各个频道的改版升级，原有的生成器已经无法适应现有的需求。因此，本捷径应运而生，画幅从原有的4:3提升至16:9，饱受欢迎的那个模板†也从09版升级至与时俱进的19版，同时还有更加人性化的操作提示和更多的可调功能，圆您一个上电视的梦！ <br />*本捷径和上述生成器仅仅功能相似，并无其他关系。 <br />†由于开发所用设备性能限制，其他模板会精简后一起上架。",
+                    "tag": "xwpdscq",
+                    "hot": false,
+                    "available": true,
+                    "operation": "下载",
+                    "developer": "2",
+                    "img": [
+                        "https://ae01.alicdn.com/kf/H9a33d43ffa3642918191147933e217a8a.jpg"
+                    ],
+                    "dtype": "快捷指令",
+                    "djrx": "与安装了“快捷指令”的 iOS 或 iPadOS 13.0 或更高版本兼容。"
+                }
+            ]
+        }
+    ],
+    "developer": {
+        "0": {
+            "name": "安播空间产品研究中心",
+            "icon": "/src/img/icon-files/s.png"
+        },
+        "1": {
+            "name": "尐新",
+            "icon": "https://cdn.cncn3.cn/webstatic/d7c8c8d906110/newjie.png"
+        },
+        "2": {
+            "name": "题海散人",
+            "icon": "https://xs1.imd.im/avatar/dbd43aba-490b-45bb-a89c-3157ae992c74.jpg?imageView2/0/w/100"
+        }
+    }
+}

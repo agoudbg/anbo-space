@@ -1,0 +1,67 @@
+.inputtable{
+	
+	width: 5em;
+	
+}
+
+#main{
+	
+	resize: vertical;
+	
+}
+
+#printout{
+	
+	display: none;
+	font-family: SimSun!important;
+	
+}
+
+.aline {
+	
+    background-color: black;
+    height: 1px;
+	
+}
+
+.printp{
+	
+	font-family: SimHei!important;
+	font-size: 34px;
+	/* font-weight: bold; */
+	display: none;
+	width: 9.5em;
+	transform: scale(0.8,1.0);
+	line-height: 1.8;
+	letter-spacing: 0.02em;
+	margin-left: -30px;
+	
+}
+@media print{
+	
+	@page{
+		
+		
+		size: A4 portrait;
+		margin:10%;
+		
+
+		
+	}
+	
+	#printout{
+		
+		display: inline;
+				
+	}
+	
+	#dtitle{
+		
+		font-weight:bold;
+		
+	}
+
+	#hcont, #scont, #fcont, .appsinner{
+		display: none;
+	}
+}

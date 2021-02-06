@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+	<head>
+
+		<meta charset="utf-8" />
+		<title>张戴阳生成器 - 安播空间 - anbo.space</title>
+		<!-- 自适应 -->
+		<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+		<meta name='apple-mobile-web-app-capable' content='yes'>
+		<meta name='apple-mobile-web-app-status-bar-style' content='black'>
+		<meta name='format-detection' content='telephone=no'>
+		<link rel="manifest" href="/src/template/manifest.json">		
+		<!-- 样式 -->
+		<link rel="stylesheet" type="text/css" href="/src/css/common.css">
+		<link rel="stylesheet" type="text/css" href="/src/css/head.css">
+		<link rel="stylesheet" type="text/css" href="/src/css/apps.css">
+
+		
+
+		<script src="/src/js/loadbefore.js"></script> 
+		<script src="zdy.js"></script> 
+	</head>
+	
+	<body>
+		<div id="hcont"></div>
+		
+		<!-- 下面是正文 -->
+		<div class="appsinner">
+			<h1 class="appname">张戴阳生成器</h1>
+
+			<p>此工具会随着大家的语录迭代。</p>
+			<p><a class="uwpa" href="https://www.wjx.cn/jq/76389450.aspx" target="_blank">提供语录</a></p>
+			<label for="idea">主题  <input id="idea" style="width:16em;" value="张戴阳为什么钓鱼" class="inputtable textin"></input></label>
+			<span style="float: right"><button class="button" onclick="copy(戴阳.innerHTML);" style="margin-right: 10px">复制</button><button class="button" onclick="生成文章();">生成</button></span>
+			
+			<textarea class="inputtable textin" style="width: calc(100% - 20px);height: 30em;" placeholder="快来点击生成吧！" readonly id="戴阳"></textarea>
+
+		</div>
+
+		<!-- 上面是正文 -->
+
+		<div id="scont"></div>
+		<div id="fcont"></div>
+	</body>
+	<script src="/src/js/header.js"></script>
+
+</html> 

@@ -1,0 +1,34 @@
+.footer-a:link{
+
+	text-decoration:none;
+	color:white;
+
+}
+
+.footer-a:hover{
+
+	text-decoration:underline;
+	color:white;
+
+}
+
+.footer-a:visited{
+
+	color:white;
+	text-decoration:none;
+
+}
+
+.footer-span{
+
+	font-size:14px;
+	color:white;
+
+}
+
+.footer-body{
+
+	background-color:grey;
+	margin:0 -8px -8px -8px;
+	padding:5px 15px 15px 15px;
+}

@@ -1,0 +1,136 @@
+.index-container{
+
+    margin: 0 -8px;
+    width: calc(100% + 16px);
+
+}
+
+.swiper-container{
+
+    width: 100%;
+    height: 250px;
+    --swiper-navigation-size: 20px;
+    margin-bottom: 10px;
+
+}  
+
+.indexblock{
+
+    display: block;
+    position: relative;
+    width: calc(100% + 16px);
+    height: 400px;
+    margin: 5px 0px;
+    background-color: var(--grey1);
+    color: var(--text);
+    text-decoration: none;
+
+
+}
+
+
+.indexblock .img{
+
+    position: absolute;
+    top: 0px;
+    z-index: 0;
+    width: 100%;
+    height: 400px;
+    background-position-x: center;
+    background-position-y: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.indexblock .texts{
+
+    position: absolute;
+    top: 35px;
+    z-index: 2;
+    display: block;
+    width: 100%;
+    text-align: center;
+
+}
+
+.indexblock.bottom .texts{
+
+    top: auto;
+    bottom: 60px;
+
+}
+
+.indexblock h1{
+
+    font-size: 28px;
+    line-height: 1.125;
+    font-weight: 800;
+    letter-spacing: .004em;
+    margin: 10px;
+
+}
+
+.indexblock h1 img{
+
+    height: 28px;
+    margin: 0;
+    margin-bottom: -4px;
+    padding: 0;
+
+}
+
+.indexblock sup{
+
+    font-size: 8px;
+
+}
+
+.indexblock h2, .indexblock object{
+
+    font-size: 17px;
+    line-height: 1.4211;
+    font-weight: 400;
+    letter-spacing: .012em;
+    margin: 10px;
+
+}
+
+.indexblock object{
+
+    font-size: 15px;
+
+}
+
+@media(min-width: 650px){
+
+    .indexblock:not(.fullwidth){
+
+        width: calc(50% - 4px);
+
+    }
+
+}
+
+.swiper-slide{
+
+    width: 100%;
+    height: 300px;
+    background-position-x: center;
+    background-position-y: 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.indexlegal{
+
+    display: block;
+    padding: 10px 10%;
+    margin: 5px -8px;
+    font-size: 14px;
+    line-height: 1.3;
+    background-color: var(--grey1);
+    color: grey;
+
+}

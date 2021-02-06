@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+	<head>
+
+		<meta charset="utf-8" />
+		<title>九字稿生成器 - 安播空间 - anbo.space</title>
+		<!-- 自适应 -->
+		<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+		<meta name='apple-mobile-web-app-capable' content='yes'>
+		<meta name='apple-mobile-web-app-status-bar-style' content='black'>
+		<meta name='format-detection' content='telephone=no'>
+		<link rel="manifest" href="/src/template/manifest.json">		
+		<!-- 样式 -->
+		<link rel="stylesheet" type="text/css" href="/src/css/common.css">
+		<link rel="stylesheet" type="text/css" href="/src/css/head.css">
+		<link rel="stylesheet" type="text/css" href="/src/css/apps.css">
+		<link rel="stylesheet" type="text/css" href="jiuzigao.css">
+
+	</head>
+
+	<body>
+
+		<div id="hcont"></div>
+		<!-- 下面是正文 -->
+		<div class="appsinner">
+			<h1 class="appname">九字稿生成器<small> Preview</small></h1>
+
+			<table style="width:100%;" cellpadding="2" cellspacing="0" border="0">
+				<tbody>
+					<tr>
+						<td style="width:33%">
+							<label for="editor">编稿人 <input id="editor" class="inputtable textin"></input></label>
+						</td>
+						<td style="width:33%">
+								<label for="reporter">记者　 <input id="reporter" class="inputtable textin"></input></label>
+						</td>
+						<td style="width:33%">
+							<label for="length">导语长 <input id="length" class="inputtable textin"></input></label>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="printer">打印人 <input id="printer" class="inputtable textin"></input></label>
+						</td>
+						<td>
+							<br />
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<span style="float: right"><button class="button" onclick="clear();" style="margin-right: 10px">清空</button><button class="button" onclick="printg();">打印</button></span>
+			<input id="title" class="inputtable textin" placeholder="标题" style="    width: calc(100% - 20px);"></input>
+			<textarea id="main" class="inputtable textin" placeholder="开始编辑内容…" style="width: calc(100% - 20px);height: 300px" cols="20" rows="9"></textarea>
+			<p>此工具处于内部预览状态，原则上不开放使用。关于此工具的咨询暂不接受。 </p>
+			<p>为了更好的打印效果，建议您下载并安装<a class="uwpa" href='https://cdn.junbo.wang/fonts/simsun.ttf'>宋体</a>和<a class="uwpa" href='https://cdn.junbo.wang/fonts/simhei.ttf'>黑体</a>字体包。 </p>
+			<p><b>已知问题：</b></p>
+			<p>·Preview 版本暂不能在每一页显示页眉和页脚，而只能在最初和最末显示。我们正在排查这个问题。 (#01)</p>
+			<p>·Preview 版本暂未内置所需字体。 (#02)</p>
+			<p>·标题无法加粗。 (#03)</p>
+		</div>
+		
+		<div id="printout">
+			<table style="width:100%;" cellpadding="0" cellspacing="0" bordercolor="#000000" border="0">
+				<tbody>
+					<tr>
+						<td colspan="3"style="font-size:22px;font-weight:bold;text-align:center">
+							<span style="font-weight:bolden;" id="dtitle">新闻文稿导语（9字）标题全</span><br />
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3">
+							<p>
+								【标&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;题】<span id="ptitle"></span>
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td width="33%">
+							<span>【编&ensp;&ensp;辑&ensp;&ensp;人】</span><span id="peditor"></span>
+						</td>
+						<td width="33%">
+							<span>【记&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;者</span><span>】</span><span id="preporter"></span>
+						</td>
+						<td width="33%">
+							<span>【导&ensp;&ensp;语&ensp;&ensp;长】</span><span id="plength"></span>
+						</td>
+					</tr>
+					
+				</tbody>
+			</table>
+	<div class="aline"></div>
+
+
+			<p class="printp" id="printp">
+
+			</p>
+		
+			<table style="width:100%;" cellpadding="0" cellspacing="0" bordercolor="#000000" border="0">
+				<tbody>
+					<tr>
+						
+					</tr>
+					<tr>
+						<td colspan="3">
+							
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p>
+								第 <span id="pagenow">1</span> 页 共 <span id="pageall">1</span> 页
+							</p>
+						</td>
+						<td >
+							<p>
+								打印人:<span id="pprinter"></span>
+							</p>
+						</td>
+						<td >							
+							<p>
+								打印时间:<span id="pprinttime"></span>
+							</p>
+						</td>
+					</tr>
+			</table>
+
+		</div>
+		<!-- 上面是正文 -->
+		<div id="scont"></div>
+		<div id="fcont"></div>
+	</body>
+	
+	<script src="/src/js/header.js"></script>
+	<script src="jiuzigao.js"></script>
+
+</html> 

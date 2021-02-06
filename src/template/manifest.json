@@ -1,0 +1,21 @@
+{
+    "name": "安播空间",
+    "short_name": "安播空间","description": "电视爱好者聚集地",
+    "icons": [
+        {
+            "src": "/src/img/J_B_Normal.png",
+            "type": "image/png",
+            "sizes": "148x148"
+        },
+        {
+            "src": "/src/img/icon-files/o.png",
+            "type": "image/png",
+            "sizes": "1075x1076"
+        }
+    ],
+    "start_url": "/",
+    "scope": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff"
+}
