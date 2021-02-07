@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+	<head>
+
+		<meta charset="utf-8" />
+		<title>设置 - 安播空间 - anbo.space</title>
+		<!-- 自适应 -->
+		<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+		<meta name='apple-mobile-web-app-capable' content='yes'>
+		<meta name='apple-mobile-web-app-status-bar-style' content='black'>
+		<meta name='format-detection' content='telephone=no'>
+		<link rel="manifest" href="/src/template/manifest.json">		
+		<!-- 样式 -->
+		<link rel="stylesheet" type="text/css" href="/src/css/common.css">
+		<link rel="stylesheet" type="text/css" href="/src/css/head.css">
+		<script src="/src/js/loadbefore.js"></script>
+		<link href="/src/css/settings.css">
+
+	</head>
+
+	<body>
+		<div id="hcont"></div>
+		
+		<!-- 下面是正文 -->
+				
+<!-- 从站点导航搬来的 -->
+		<h1 class="title">设置</h1>
+		<div id="settings-container">
+			<div id="settings">
+				<h2 id="account" class="setting-h2">账户</h2>
+				<div class="setting-button">
+					<a href="javascript:alert('此功能开发中，预计 2021 年 7 月上线。');" class="header-link">
+						<div class="account" id="settings-account">
+							<img src="https://static.hdslb.com/images/akari.jpg"></img><span>点击登录</span>
+						</div>
+					</a>
+				</div>		
+				<p class="setting-text">此功能开发中，预计 2021 年 7 月上线。</p>
+				<h2 id="gexinhua" class="setting-h2">个性化</h2>
+				<div class="setting-button">
+					<p>展示旧版名称和图片（开发中）</p>
+					<label for=""><input type="checkbox" name="" id="showoldname" class="a-switch"onclick="changesetting('showoldname');"disabled="true"></label>
+				</div>		
+
+				<p class="setting-text">如果您更喜欢以前的站点名称，可以在此启用安播空间研发的 JavaScript 智能调换功能。部分描述可能不受此设置影响。 </p>
+				<h2 id="ads" class="setting-h2">广告</h2>
+				<div class="setting-button">
+					<p>关闭网站广告</p>
+					<label for=""><input type="checkbox" name="" id="closeadbutton" class="a-switch"onclick="changesetting('closeadbutton');"disabled="true"></label>
+				</div>							
+				<p class="setting-text">安播空间还没有通过广告平台审核，此选项暂时无效。<br />此选项控制安播空间及旗下网站上由广告平台提供的广告是否展示。<br />展示这些广告是安播空间获取收益的重要渠道。如果您认为这些广告影响您的体验，您可以在这里将其关闭1个月。<br />鉴于我们提供了方便的关闭渠道，我们强烈抗议在浏览我们网站时使用诸如 Adblock 的广告屏蔽插件。它们不仅不一定能去除广告，还会对网站的布局带来糟透了的影响。在极端情况下，junbo.wang 会显示更长的提示文本引导您停用这些插件。如果您仍打开了这些插件，则可能影响到在此页关闭广告。<br />请注意：若您未登录 Junbo 账号，关闭或清除 Cookie 、在无痕模式下浏览、更换浏览器或设备、启用广告屏蔽插件等操作均可能导致此设置被重置。 </p>
+				
+
+
+			</div>
+		</div>
+		
+<br><br><br><br><br><br>
+		<div id="fcont"></div>
+	</body>
+		<script src="/src/js/header.js"></script>
+		<script src="//cdn.junbo.wang/cookies.js"></script>
+		<script src="/src/js/settings.js"></script>
+		<script>loadsettings();</script>
+
+		
+
+</html> 
