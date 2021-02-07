@@ -12,8 +12,9 @@ if (debug = false) {
     for (i = 0; i <= HTTP_PAGE.length; i++) {
         if ((window.location.pathname.match(HTTP_PAGE[i]) != null) & (window.location.protocol == "https:"))
             window.location.href = "http://" + window.location.host + window.location.pathname + window.location.search;
-        else if (window.location.protocol == "https:")
+    }
+        if (window.location.protocol == "http:")
             window.location.href = "https://" + window.location.host + window.location.pathname + window.location.search;
 
-    }
+
 }
