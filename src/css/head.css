@@ -35,6 +35,12 @@
 	text-decoration:none!important;
 }
 
+.header-special{
+
+	margin-left: 10px;
+
+}
+
 @media (prefers-color-scheme: dark) {
 	
 	#header-main{
@@ -121,7 +127,7 @@
 		fill: white!important;
 			
 	}
-.header-main-opened .changecolor{
+	.header-main-opened .changecolor{
 		
 		filter: invert(100%)!important;
 			
@@ -148,6 +154,13 @@
 		
 		height: 40px;
 		
+	}
+
+	.header-special{
+
+		position: absolute;
+		right: 14px;
+
 	}
 
 	#mobile-menu {
