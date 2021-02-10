@@ -18,10 +18,10 @@ function search(type, keywords, backdiv) {
                 searchingtype = type[searchedprojecttypes];
                 if (getdoc(searchedtypes, searchedproducts, searchingtype).match(keywords) != null) {
                     if (hasfoundinthistype == 0) {
-                        document.getElementById(backdiv).innerHTML += "<h2>" + typename + "</h2><h3>" + typediscribe + "</h3>";
+                        document.getElementById(backdiv).innerHTML += "<h2>" + typename + "</h2><h3>" + typediscribe + "</h3><div class='products-box flex'id='p"+searchedtypes+"'></div>";
                         hasfoundinthistype = 1;
                     }
-                    putpreview(searchedtypes, searchedproducts, backdiv);
+                    putpreview(searchedtypes, searchedproducts, "p"+searchedtypes);
                     break;
                 }
             }
