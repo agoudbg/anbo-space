@@ -11,7 +11,7 @@ HTTP_PAGE = ["live", "tv-desk", "chunwanlive"];
 if (debug == false) {
     FORCEHTTP = false;
     for (i = 0; i < HTTP_PAGE.length; i++) {
-        if ((window.location.pathname.match(HTTP_PAGE[i]) != null) & (window.location.protocol == "https:")) {
+        if (window.location.pathname.match(HTTP_PAGE[i]) != null) {
             FORCEHTTP = true;
             break;
         }
