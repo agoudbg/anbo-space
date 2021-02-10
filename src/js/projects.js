@@ -3,10 +3,12 @@ PROJECTSJSON = loadc("/src/template/products.json");
 PROJECTS = JSON.parse(PROJECTSJSON);
 
 did = 0;
+asktime = 0;
 
 search("all", "", "main_result_div");
 
 function search(type, keywords, backdiv) {
+    asktime++;
     document.getElementById(backdiv).innerHTML = '';
     for (searchedtypes = 0, hasfoundinthistype = 0; searchedtypes < PROJECTS.type.length; searchedtypes++, hasfoundinthistype = 0) {
         typename = PROJECTS.type[[searchedtypes]].name;
@@ -18,10 +20,10 @@ function search(type, keywords, backdiv) {
                 searchingtype = type[searchedprojecttypes];
                 if (getdoc(searchedtypes, searchedproducts, searchingtype).match(keywords) != null) {
                     if (hasfoundinthistype == 0) {
-                        document.getElementById(backdiv).innerHTML += "<h2>" + typename + "</h2><h3>" + typediscribe + "</h3><div class='products-box flex'id='p"+searchedtypes+"'></div>";
+                        document.getElementById(backdiv).innerHTML += "<h2>" + typename + "</h2><h3>" + typediscribe + "</h3><div class='products-box flex'id='" + asktime + "p" + searchedtypes + "'></div>";
                         hasfoundinthistype = 1;
                     }
-                    putpreview(searchedtypes, searchedproducts, "p"+searchedtypes);
+                    putpreview(searchedtypes, searchedproducts, asktime + "p" + searchedtypes);
                     break;
                 }
             }
@@ -36,8 +38,8 @@ function opend(tid, pid) {
     newd = document.createElement("div");
     document.body.appendChild(newd);
     newd.innerHTML += `
-    <div class="detail-cover" id="d`+ did + `cover" onClick="closed(` + did + `)"></div> 
-    <div class="detail" id="d`+ did + `">
+    <div class="detail-cover" id="d`+ did + `cover" onClick="closed(` + did + `)" style="z-index: 99999999999` + (did * 2) + `"></div> 
+    <div class="detail" id="d`+ did + `" style="z-index: 99999999999` + (did * 2 + 1) + `">
         <div class="detail-header" id="d`+ did + `detail-header">		
             <p class="detail-header-back" id="d`+ did + `back" onClick="closedev(` + tid + `,` + pid + `,` + did + `)"><svg t="1595519506428" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2349" width="18" height="18" style="display: inline;"><path d="M314.011 489.179c-12.496 12.496-12.497 32.758-0.001 45.256 12.496 12.496 32.759 12.497 45.254 0.001L709.989 183.71c12.498-12.498 12.497-32.76-0.001-45.257-12.496-12.495-32.757-12.495-45.253 0.001L314.011 489.179z" p-id="2350" fill="#3776F4"></path><path d="M664.734 885.546c12.496 12.496 32.759 12.497 45.254 0.002 12.498-12.497 12.498-32.759 0-45.257L359.266 489.569c-12.497-12.498-32.76-12.498-45.256 0-12.496 12.496-12.496 32.758 0.001 45.254l350.723 350.723z" p-id="2351" fill="#3776F4"></path></svg>返回</p>
             <p class="detail-header-title" id="d`+ did + `title">` + getdoc(tid, pid, "name") + `</p>

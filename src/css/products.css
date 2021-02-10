@@ -415,7 +415,7 @@
     left: calc(100% - 37px)!important;
     top: 19px!important;
     right: auto!important;
-
+    
 }
 
 .detail-developer-related{
@@ -430,12 +430,14 @@
     transition-timing-function: cubic-bezier(0.36, 0.84, 0.79, 1);
     margin: 0px;
     box-shadow: -2px 40px 5px var(--grey4);
+    visibility: hidden;
 
 }
 
 .detail-developer-related-opened{
 
     left: 0px;
+    visibility: visible;
 
 }
 .detail-developer-related h1{
@@ -512,18 +514,19 @@
         width: calc(100% / 3 - 12px);
         content: '';
     }
-
+/* 
     .detail{
 
         left: calc(50% - 200px);
         width: 400px;
-    }
-
+    } */
+/* 
     .notable{
 
         width: calc(100% - 0px)!important;
     
-    }
+    } */
+    
 }
 
 @keyframes dmain{
