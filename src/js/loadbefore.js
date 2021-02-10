@@ -13,7 +13,7 @@ if (debug == false) {
         if ((window.location.pathname.match(HTTP_PAGE[i]) != null) & (window.location.protocol == "https:"))
             window.location.href = "http://" + window.location.host + window.location.pathname + window.location.search;
     }
-    if (window.location.protocol == "http:")
+    else if (window.location.protocol == "http:")
         window.location.href = "https://" + window.location.host + window.location.pathname + window.location.search;
 
 
