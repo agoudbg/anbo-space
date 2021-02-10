@@ -14,6 +14,11 @@
 		<link rel="stylesheet" type="text/css" href="/src/css/common.css">
 		<link rel="stylesheet" type="text/css" href="/src/css/head.css">
 		<script src="/src/js/loadbefore.js"></script>
+	
+		<script src="https://cdn.jsdelivr.net/npm/hls.js@0.13.2/dist/hls.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/flv.js@1.5.0/dist/flv.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/dplayer@1.25.0/dist/DPlayer.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="/src/css/DPlayer.min.css">
 
 	</head>
 
@@ -23,8 +28,32 @@
 		<!-- 下面是正文 -->
 		
 		<h1 class="title">2021年中央广播电视总台春节联欢晚会</h1>
-		<div style="display: block;padding: 0 10%;">
+		<div class="d"style="display: block;padding: 0 10%;justify-content: space-between;">
 			
+			<div class="c">
+				<h2>春晚直播在线观看</h2>
+				<div id="c1"></div>
+			</div>
+			<div class="c">
+				<h2>一年又一年在线观看</h2>
+				<div id="c13"></div>
+			</div>
+			<style>
+
+				.c{
+					width: 100%;
+					display:block;
+				}
+				@media (min-width:700px) {
+					.c{
+						width: 48%;
+					}
+					.d{
+						display: flex!important
+					}
+				}
+			</style>
+
 
 		</div>
 
@@ -35,5 +64,69 @@
 	</body>
 	
 	<script src="/src/js/header.js"></script>
+	<script>
+		
+	var dp = new DPlayer({
+	container: document.getElementById('c1'),
+	theme: 'red',
+	live: true,
+	hotkey: false,
+	autoplay: true,
+	screenshot: true,
+	volume: 1.0,mutex: false,
+	// 视频右键菜单
+		contextmenu: [
+			{
+				text: '安播空间',
+				link: 'https://anbo.space',
+			},
+		],
+
+	video: {
+		quality: 
+			[
+				{ name: '路线1', url: 'http://ivi.bupt.edu.cn/hls/cctv1hd.m3u8', type: 'hls', },
+				{ name: '路线s1', url: 'http://ivi.bupt.edu.cn/hls/cctv1hd.m3u8', type: 'hls', },
+				// { name: '', url: '', type: 'hls', },
+				// { name: '',url: '',type:'hls',},
+			],
+
+			pic: 'https://ae02.alicdn.com/kf/H58442e62ed6d4b63a0d2de312acd71685.jpg',
+			defaultQuality: 0,
+	}})
+	;
+	
+	
+	var dp2 = new DPlayer({
+	container: document.getElementById('c13'),
+	theme: 'red',
+	live: true,
+	hotkey: false,
+	autoplay: true,
+	screenshot: true,
+	volume: 1.0,
+	mutex: false,
+	// 视频右键菜单
+		contextmenu: [
+			{
+				text: '安播空间',
+				link: 'https://anbo.space',
+			},
+		],
+
+	video: {
+		quality: 
+			[
+				{name: '路线1beta',url: 'http://ivi.bupt.edu.cn/hls/cctv13hd.m3u8',type:'hls',},
+				{name: '路线s1',url: 'http://ivi.bupt.edu.cn/hls/cctv13.m3u8',type:'hls',},
+				// {name: '',url: '',type:'hls',},
+			],
+
+			pic: 'https://ae02.alicdn.com/kf/He3f08b1c2c02457bae6d5d5a631e8aecJ.jpg',
+			defaultQuality: 1,
+	}})
+	;
+	
+	</script>
 
 </html> 

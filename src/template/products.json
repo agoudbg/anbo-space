@@ -8,7 +8,7 @@
                     "name": "直播中心",
                     "third_party": false,
                     "page_url": "/live/new.html",
-                    "icon": "/live/cgtn.png",
+                    "icon": "https://i.zerodream.net/73e1206c19daedc8473e732e3e886832.png",
                     "slug": "看直播，上安播空间！",
                     "describe": "通过多达数百个直播源和方便的功能，安播空间直播中心是您查询直播源的不二之选。无论是设计还是功能都定会让您耳目一新。",
                     "tag": "live_center",
@@ -27,7 +27,7 @@
                     "name": "229视频库",
                     "third_party": false,
                     "page_url": "http://v.anbo.space",
-                    "icon": "/live/cgtn.png",
+                    "icon": "/live/zlz.png",
                     "slug": "“内部资料”聚集地，能拿多少看关系。",
                     "describe": "有着充足的节目录像和“内部资源”，229视频库为您带来了绝佳的视频体验。无论是在线观看还是快捷下载，更或者是发布视频，都可以被轻松完成。",
                     "tag": "video_center",
@@ -63,7 +63,7 @@
                 {
                     "name": "联播资源库",
                     "third_party": true,
-                    "page_url": "http://newjie1.tpddns.cn:81/s/ePQBZrg4KyN4ddn",
+                    "page_url": "http://newjie.xyz/lb",
                     "icon": "https://img.cncn3.cn/images/4SnU.png",
                     "slug": "稀缺联播资源，现在获取。",
                     "describe": "通过以尐新为中心的资源库团队，获取“内部”版本的每日新闻联播不再需要守住发射火箭般的“窗口期”，唾手可得。",
@@ -178,6 +178,48 @@
                     "dtype": "快捷指令",
                     "djrx": "与安装了“快捷指令”的 iOS 或 iPadOS 13.0 或更高版本兼容。"
                 }
+            ]
+        },
+        {
+            "name": "加入群聊",
+            "describe": "畅所欲言，奋勇争先。",
+            "innerproducts": [
+                {
+                    "name": "翻车闲聊站",
+                    "third_party": false,
+                    "page_url": "https://jq.qq.com/?_wv=1027&k=LbM4Mqmr",
+                    "icon": "https://ae01.alicdn.com/kf/H8fe23f1a58b24f229dee1ad17c521292E.jpg",
+                    "slug": "最新“翻车”资讯，一网打尽。",
+                    "describe": "",
+                    "tag": "fcxlz",
+                    "hot": false,
+                    "available": true,
+                    "operation": "加入",
+                    "developer": "0",
+                    "img": [
+                    ],
+                    "dtype": "QQ群",
+                    "djrx": "需要拥有QQ账号。"
+                },
+                {
+                    "name": "安播空间粉丝群",
+                    "third_party": false,
+                    "page_url": "https://jq.qq.com/?_wv=1027&k=JOp149mc",
+                    "icon": "/live/zlz.png",
+                    "slug": "安播空间官方粉丝群。",
+                    "describe": " ",
+                    "tag": "fsq",
+                    "hot": false,
+                    "available": true,
+                    "operation": "加入",
+                    "developer": "0",
+                    "img": [
+                        
+                    ],
+                    "dtype": "Qq群",
+                    "djrx": "需要拥有QQ账号。"
+                }
+                
             ]
         }
     ],

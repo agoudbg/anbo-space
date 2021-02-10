@@ -488,7 +488,7 @@
     .title{
 
         text-align: left;
-        display: inline;
+        display: inline-block;
 
     }
 
@@ -497,6 +497,8 @@
         width: 200px;
         float: right;
         vertical-align: bottom;
+        position: relative;
+        top: 20px;
 
     }
     .products{
