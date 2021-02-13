@@ -27,7 +27,7 @@
                     "name": "229视频库",
                     "third_party": false,
                     "page_url": "http://v.anbo.space",
-                    "icon": "/live/zlz.png",
+                    "icon": "https://junbo.wang/src/img/website-icons/v.anbo.space.png",
                     "slug": "“内部资料”聚集地，能拿多少看关系。",
                     "describe": "有着充足的节目录像和“内部资源”，229视频库为您带来了绝佳的视频体验。无论是在线观看还是快捷下载，更或者是发布视频，都可以被轻松完成。",
                     "tag": "video_center",
@@ -46,7 +46,7 @@
                     "name": "张戴阳生成器",
                     "third_party": false,
                     "page_url": "/apps/zhangdaiyang",
-                    "icon": "https://tvax2.sinaimg.cn/crop.0.0.1002.1002.180/d7c254e0ly8gcrdkpguj6j20ru0ruwgt.jpg?KID=imgbed,tva",
+                    "icon": "https://p.pstatp.com/origin/fe1e00029a21f9ef7b13",
                     "slug": "人人都是张戴阳，人人都能钓大鱼。",
                     "describe": "",
                     "tag": "zdy",
@@ -137,7 +137,8 @@
                     "img": [
                         "https://cdn.cncn3.cn/webstatic/81635e81c4886/img_20210123_220117.png",
                         "https://cdn.cncn3.cn/webstatic/f60e299784976/img_20210124_113715.png",
-                        "https://cdn.cncn3.cn/webstatic/873913b9622b1/img_20210123_214434.png" ,"https://cdn.cncn3.cn/webstatic/90d5a361608e9/img_20210123_214458.png"
+                        "https://cdn.cncn3.cn/webstatic/873913b9622b1/img_20210123_214434.png",
+                        "https://cdn.cncn3.cn/webstatic/90d5a361608e9/img_20210123_214458.png"
                     ],
                     "dtype": "演示文稿",
                     "djrx": "与 Microsoft Office PowerPoint 2010 或更高版本兼容。"
@@ -196,8 +197,7 @@
                     "available": true,
                     "operation": "加入",
                     "developer": "0",
-                    "img": [
-                    ],
+                    "img": [],
                     "dtype": "QQ群",
                     "djrx": "需要拥有QQ账号。"
                 },
@@ -213,13 +213,42 @@
                     "available": true,
                     "operation": "加入",
                     "developer": "0",
-                    "img": [
-                        
-                    ],
+                    "img": [],
+                    "dtype": "Qq群",
+                    "djrx": "需要拥有QQ账号。"
+                },
+                {
+                    "name": "铺路根据地",
+                    "third_party": true,
+                    "page_url": "https://jq.qq.com/?_wv=1027&k=9GY8hNZY",
+                    "icon": "https://p.pstatp.com/origin/ff4a0001ff49735c5914",
+                    "slug": "安播之家旗下群聊。",
+                    "describe": "“安全播出大于天”，欢迎您来到安播之家。本群为安播之家粉丝交流群，主要讨论以中央广播电视总台为主的广电类话题。",
+                    "tag": "plgjd",
+                    "hot": false,
+                    "available": true,
+                    "operation": "加入",
+                    "developer": "3",
+                    "img": [],
+                    "dtype": "QQ群",
+                    "djrx": "需要拥有QQ账号。"
+                },
+                {
+                    "name": "黑名单闲聊站",
+                    "third_party": true,
+                    "page_url": "https://jq.qq.com/?_wv=1027&k=rT15ZTKJ",
+                    "icon": "https://p.pstatp.com/origin/ffb400026beaea6eac52",
+                    "slug": "安播之家旗下群聊。",
+                    "describe": "“安全播出大于天”，欢迎您来到安播之家。本群为安播之家粉丝交流群，主要讨论科技类话题。",
+                    "tag": "hmdxlz",
+                    "hot": false,
+                    "available": true,
+                    "operation": "加入",
+                    "developer": "3",
+                    "img": [],
                     "dtype": "Qq群",
                     "djrx": "需要拥有QQ账号。"
                 }
-                
             ]
         }
     ],
@@ -235,6 +264,10 @@
         "2": {
             "name": "题海散人",
             "icon": "https://xs1.imd.im/avatar/dbd43aba-490b-45bb-a89c-3157ae992c74.jpg?imageView2/0/w/100"
+        },
+        "3": {
+            "name": "N02铺路机",
+            "icon": "https://p.pstatp.com/origin/1382100032b8c22b132c4"
         }
     }
 }

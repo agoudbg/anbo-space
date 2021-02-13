@@ -80,7 +80,9 @@ function opend(tid, pid) {
         </div>
     </div>`;
     putpreview(tid, pid, "d" + did + "products", true);
-    for (t = 0; t < getdoc(tid, pid, "img").length; t++) {
+    if(getdoc(tid, pid, "img").length ==0)
+        document.getElementById(`d` + did + `detail-img`).style.display="none";
+    for (t = 0; t < getdoc(tid, pid, "img").length ; t++) {
         if (getdoc(tid, pid, "img")[t].match("type=video") != null)
             document.getElementById(`d` + did + `detail-img`).innerHTML += "<video src='" + getdoc(tid, pid, "img")[t] + "' autoplay='true'</video>"
         else
