@@ -21,5 +21,7 @@ if (debug == false) {
     if (window.location.protocol == "https:" & FORCEHTTP == true)
         window.location.href = "http://" + window.location.host + window.location.pathname + window.location.search;
 
-
 }
+
+// 广告代码
+document.write(`<script data-ad-client="ca-pub-5639925822995109" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script  src="https://cdn.junbo.wang/ads.js"></script>`);
