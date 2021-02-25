@@ -1,0 +1,29 @@
+.inputtable{
+	
+	width: 3em;
+	
+}
+
+.half{
+
+	display:inline-grid;
+	width: 100%;
+
+}
+
+label{
+
+	display: inline-block;
+	vertical-align: top;
+
+}
+
+@media(min-width: 600px){
+
+	.half{
+
+		width: 49.2%;
+
+	}
+
+}
