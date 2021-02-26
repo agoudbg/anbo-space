@@ -312,6 +312,15 @@
 
 }
 
+.detail-error{
+
+    width: 35%;
+    display: inline;
+	max-width: 180px;
+    fill: grey!important;
+    margin-top: 80px;
+    
+}
 
 .detail h3{
 

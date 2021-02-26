@@ -82,19 +82,16 @@
                 {
                     "name": "联播资源库",
                     "third_party": true,
-                    "page_url": "http://newjie.xyz/lb",
+                    "page_url": "",
                     "icon": "https://img.cncn3.cn/images/4SnU.png",
                     "slug": "稀缺联播资源，现在获取。",
-                    "describe": "通过以尐新为中心的资源库团队，获取“内部”版本的每日新闻联播不再需要守住发射火箭般的“窗口期”，唾手可得。",
-                    "tag": "newjie_lb",
+                    "describe": "安播空间接消息，由于技术原因，本产品暂时无法使用，造成的不便敬请谅解。",
+                    "tag": "",
                     "hot": true,
-                    "available": true,
-                    "operation": "打开",
-                    "developer": "1",
+                    "available": false,
+                    "operation": "",
+                    "developer": "",
                     "img": [
-                        "https://ae01.alicdn.com/kf/Hddff29db493b405987270db0fe5f03a2S.jpg",
-                        "https://ae01.alicdn.com/kf/H72ead29ec73547ec95c0befcc40fb72cc.jpg ",
-                        "https://ae01.alicdn.com/kf/H952e7ffa4c49425498a0569b360b9df3Q.jpg"
                     ],
                     "dtype": "通用 PWA 应用",
                     "djrx": "与大多数现代浏览器兼容。"
@@ -126,7 +123,7 @@
                     "describe": "快速制作和打印九字稿。",
                     "tag": "jiuzigao",
                     "hot": false,
-                    "available": false,
+                    "available": true,
                     "operation": "打开",
                     "developer": "0",
                     "img": [

@@ -37,7 +37,22 @@ function opend(tid, pid) {
     developerid = getdoc(tid, pid, "developer")
     newd = document.createElement("div");
     document.body.appendChild(newd);
-    newd.innerHTML += `
+    if (getdoc(tid, pid, "available") == false)
+        newd.innerHTML += `
+        <div class="detail-cover" id="d`+ did + `cover" onClick="closed(` + did + `)" style="z-index: 99999999999` + (did * 2) + `"></div> 
+        <div class="detail" id="d`+ did + `" style="z-index: 99999999999` + (did * 2 + 1) + `">
+            <div class="detail-header" id="d`+ did + `detail-header">		
+                <p class="detail-header-back" id="d`+ did + `back" onClick="closedev(` + tid + `,` + pid + `,` + did + `)"><svg t="1595519506428" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2349" width="18" height="18" style="display: inline;"><path d="M314.011 489.179c-12.496 12.496-12.497 32.758-0.001 45.256 12.496 12.496 32.759 12.497 45.254 0.001L709.989 183.71c12.498-12.498 12.497-32.76-0.001-45.257-12.496-12.495-32.757-12.495-45.253 0.001L314.011 489.179z" p-id="2350" fill="#3776F4"></path><path d="M664.734 885.546c12.496 12.496 32.759 12.497 45.254 0.002 12.498-12.497 12.498-32.759 0-45.257L359.266 489.569c-12.497-12.498-32.76-12.498-45.256 0-12.496 12.496-12.496 32.758 0.001 45.254l350.723 350.723z" p-id="2351" fill="#3776F4"></path></svg>返回</p>
+                <p class="detail-header-title" id="d`+ did + `title">` + getdoc(tid, pid, "name") + `</p>
+                <p class="detail-header-finish" onClick="closed(`+ did + `)">完成</p>
+            </div>
+            <div class="detail-main" >
+                        <p style="text-align:center;display:block;width:calc(100% - 100px);padding: 20px 50px;"><svg t="1614322271288" class="icon detail-error" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2094" width="100" height="100"><path d="M511.8 63.3c-246.7 0-448.5 201.8-448.5 448.5s201.8 448.5 448.5 448.5 448.5-201.8 448.5-448.5S758.5 63.3 511.8 63.3z m214.3 603c15 15 15 42.4 0 57.3-7.5 7.5-17.4 12.5-29.9 12.5-10 0-22.4-5-29.9-12.5L521.8 579.1 377.3 723.6c-15 15-42.4 15-57.3 0s-15-42.4 0-57.3l144.5-144.5L320 377.3c-7.5-7.5-12.5-17.4-12.5-29.9 0-10 5-22.4 12.5-29.9 15-15 42.4-15 57.3 0L521.8 462l144.5-144.5c7.5-7.5 17.4-12.5 29.9-12.5 10 0 22.4 5 29.9 12.5s12.5 17.4 12.5 29.9c0 10-5 22.4-12.5 29.9L581.6 521.8l144.5 144.5z" p-id="2095"></path></svg><br><br>` + getdoc(tid, pid, "describe") + `<br></p>
+            </div>
+        </div>`;
+
+    else {
+        newd.innerHTML += `
     <div class="detail-cover" id="d`+ did + `cover" onClick="closed(` + did + `)" style="z-index: 99999999999` + (did * 2) + `"></div> 
     <div class="detail" id="d`+ did + `" style="z-index: 99999999999` + (did * 2 + 1) + `">
         <div class="detail-header" id="d`+ did + `detail-header">		
@@ -79,16 +94,16 @@ function opend(tid, pid) {
             </div>	
         </div>
     </div>`;
-    putpreview(tid, pid, "d" + did + "products", true);
-    if(getdoc(tid, pid, "img").length ==0)
-        document.getElementById(`d` + did + `detail-img`).style.display="none";
-    for (t = 0; t < getdoc(tid, pid, "img").length ; t++) {
-        if (getdoc(tid, pid, "img")[t].match("type=video") != null)
-            document.getElementById(`d` + did + `detail-img`).innerHTML += "<video src='" + getdoc(tid, pid, "img")[t] + "' autoplay='true'</video>"
-        else
-            document.getElementById(`d` + did + `detail-img`).innerHTML += "<img src='" + getdoc(tid, pid, "img")[t] + "'/>"
+        putpreview(tid, pid, "d" + did + "products", true);
+        if (getdoc(tid, pid, "img").length == 0)
+            document.getElementById(`d` + did + `detail-img`).style.display = "none";
+        for (t = 0; t < getdoc(tid, pid, "img").length; t++) {
+            if (getdoc(tid, pid, "img")[t].match("type=video") != null)
+                document.getElementById(`d` + did + `detail-img`).innerHTML += "<video src='" + getdoc(tid, pid, "img")[t] + "' autoplay='true'</video>"
+            else
+                document.getElementById(`d` + did + `detail-img`).innerHTML += "<img src='" + getdoc(tid, pid, "img")[t] + "'/>"
+        }
     }
-
     did++;
 }
 
@@ -127,11 +142,14 @@ function putpreview(tid, pid, div, disableclick) {
     if (disableclick == true)
         onclickw = "";
     else onclickw = `onClick="opend('` + tid + `','` + pid + `')"`;
+    if (getdoc(tid, pid, "available"))
+        button = `<button class="products-button" onClick="window.open('` + getdoc(tid, pid, "page_url") + `')">` + getdoc(tid, pid, "operation") + `</button>`;
+    else button = "";
     document.getElementById(div).innerHTML += `<div class="products"` + onclickw + `>
     <img class="products-img" src="`+ getdoc(tid, pid, "icon") + `"/>
     <p class="products-title">` + getdoc(tid, pid, "name") + `</p>` + thirdparty + `
-    <p class="products-little">` + getdoc(tid, pid, "slug") + `</p>
-    <button class="products-button" onClick="window.open('`+ getdoc(tid, pid, "page_url") + `')">` + getdoc(tid, pid, "operation") + `</button></div>`;
+    <p class="products-little">` + getdoc(tid, pid, "slug") + `</p> ` + button + `
+    </div>`;
 }
 
 
