@@ -35,6 +35,7 @@ function calc() {
 
 	resultbox.innerHTML = "";
 	window.location.href = "#resultbox";
+	document.body.scrollTop-=90;
 	needCount = 1 * wishInbox.value - 1 * nowHaveInbox.value;
 	console.log('NeedCount: ' + needCount);
 	if (isNaN(needCount) == true) {
@@ -69,7 +70,6 @@ function calc() {
 		actuallyDay++;
 	console.log('Actually Need: ' + actuallyDay);
 	var date = new Date();
-	//date.getMonth()得到的月份比实际月份小1，所以实际月份是(date.getMonth()+1)
 	date.setDate(date.getDate() + actuallyDay);
 	finishDate = (date.getFullYear()) + " 年 " + (date.getMonth() + 1) + " 月 " + date.getDate() + " 日 ";
 	var nowDate = new Date();

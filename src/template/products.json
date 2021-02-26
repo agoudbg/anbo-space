@@ -61,6 +61,25 @@
                     "djrx": "与大多数现代浏览器兼容。"
                 },
                 {
+                    "name": "央视频积分计算器",
+                    "third_party": false,
+                    "page_url": "/apps/yspcal",
+                    "icon": "https://i.zerodream.net/c87aeaee773d12cd0f9c6b1f07aad300.png",
+                    "slug": "积分有“计”划，好礼抱回家。",
+                    "describe": "央视频积分计算器帮助您计算央视频积分，了解要多久达到央视频积分要求。",
+                    "tag": "yspcal",
+                    "hot": false,
+                    "available": true,
+                    "operation": "打开",
+                    "developer": "0",
+                    "img": [
+                        "https://img.cncn3.cn/images/XzMD.png",
+                        "https://img.cncn3.cn/images/X0tV.png"
+                    ],
+                    "dtype": "通用 PWA 应用",
+                    "djrx": "与大多数现代浏览器兼容。"
+                },
+                {
                     "name": "联播资源库",
                     "third_party": true,
                     "page_url": "http://newjie.xyz/lb",

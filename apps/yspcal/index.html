@@ -15,7 +15,6 @@
 		<link rel="stylesheet" type="text/css" href="/src/css/head.css">
 		<link rel="stylesheet" type="text/css" href="/src/css/apps.css">
 		<link rel="stylesheet" type="text/css" href="yspcal.css">
-		<script src="yspcal.js"></script>
 
 	</head>
 
@@ -24,7 +23,7 @@
 		<div id="hcont"></div>
 		<!-- 下面是正文 -->
 		<div class="appsinner">
-			<h1 class="appname">央视频积分计算器</h1>          
+			<h1 class="appname">央视频积分计算器 <beta-tag>Beta</beta-tag></h1>          
 			<div class="half">
 				<h2>基本信息</h2>
 				<label for="nowHaveInbox">当前拥有积分 <input value="" type="number" oninput="checknuminput();" id="nowHaveInbox" class="inputtable textin"></input></label>
@@ -45,7 +44,7 @@
 			<div class="half">
 				<div id="resultbox" class="inputtable textin" placeholder="还没有发起计算" style="width: calc(100% - 20px);min-height: 280px; height: auto;" readonly cols="20" rows="9">还没有发起计算</div>     
 				<span style="text-align: right"><button class="button" onclick="copy();">复制和分享</button></span>     
-				<p>误差说明：本计算器计算的每日签到奖励按照平均值 14 积分计算，每月按 30.5 天计算，每月完成天数从当月 1 日开始计算。</p>
+				<p>误差说明：本计算器计算的每日签到奖励取每 7 天 100 积分的平均值 14 积分计算，每月按 30.5 天计算，每月完成天数从当月 1 日开始计算。</p>
 				<p>本计算器所得结果仅供参考，以央视频内展示结果为准。本计算器与央视频无关。</p>
 			</div>
 
@@ -56,6 +55,7 @@
 	</body>
 	
 	<script src="/src/js/header.js"></script>
+	<script src="yspcal.js"></script>
 
 
 </html> 
