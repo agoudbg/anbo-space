@@ -6,18 +6,20 @@ function loadc(name) {
 	xhr.send(null);
 	return xhr.status === okStatus ? xhr.responseText : null;
 }
-if (noheader == true) {
-	hcont.style.display = "none";
-	scont.style.display = "none";
-	fcont.style.display = "none";
-	document.body.className += " nosidebar";
+if (noheader != null) {
+	if (noheader == true) {
+		hcont.style.display = "none";
+		scont.style.display = "none";
+		fcont.style.display = "none";
+		document.body.className += " nosidebar";
+	}
+	c = loadc("/src/template/header.html");
+	hcont.innerHTML = c;
+	c = loadc("/src/template/footer.html");
+	fcont.innerHTML = c;
+	c = loadc("/src/template/sidebar.html");
+	scont.innerHTML = c;
 }
-c = loadc("/src/template/header.html");
-hcont.innerHTML = c;
-c = loadc("/src/template/footer.html");
-fcont.innerHTML = c;
-c = loadc("/src/template/sidebar.html");
-scont.innerHTML = c;
 var sit = 0;
 function go() {
 	if (sit == 0) {

@@ -23,10 +23,10 @@ if (debug == false) {
 
 }
 // 判断不需要顶栏和底栏的页面
-NOHEADER_PAGE=["noheader=true","pwastart"];
-noheader=false;
+NOHEADER_PAGE = ["noheader=true", "pwa-start"];
+noheader = false;
 for (i = 0; i < NOHEADER_PAGE.length; i++) {
-    if ((window.location.pathname+window.location.search).match(NOHEADER_PAGE[i]) != null) {
+    if ((window.location.pathname + window.location.search).match(NOHEADER_PAGE[i]) != null) {
         noheader = true;
         break;
     }
