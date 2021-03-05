@@ -92,7 +92,7 @@ input,textarea{
     padding: 2px 7px;
 	outline: none;
 	font-size: 16px;
-	background-color: var(--uwp-button);
+	background-color: var(--uwp-button)!important;
 	color: var(--uwp-text);
 	display: inline;
 }
@@ -110,7 +110,7 @@ input,textarea{
     -moz-transform: rotate(0.97);
     -webkit-transform: rotate(0.97);
     -o-transform: rotate(0.97);
-	background-color: var(--uwp-button-active);
+	background-color: var(--uwp-button-active)!important;
 	border: 3px var(--uwp-button-active) solid;
 
 }
