@@ -256,7 +256,7 @@ beta-tag{
 
 @media(min-width: 1000px){
 
-	body{
+	body:not(.nosidebar){
 
 		padding: 0 300px 0 0;
 	}

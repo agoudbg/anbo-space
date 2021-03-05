@@ -6,6 +6,12 @@ function loadc(name) {
 	xhr.send(null);
 	return xhr.status === okStatus ? xhr.responseText : null;
 }
+if (noheader == true) {
+	hcont.style.display = "none";
+	scont.style.display = "none";
+	fcont.style.display = "none";
+	document.body.className += " nosidebar";
+}
 c = loadc("/src/template/header.html");
 hcont.innerHTML = c;
 c = loadc("/src/template/footer.html");
@@ -52,7 +58,7 @@ function stop() {
 ATAGS = document.getElementsByTagName("a");
 
 // 将出站链接重定向(待做)
-OURSITEURL=["junbo.wang",]
+OURSITEURL = ["junbo.wang",]
 
 // PWA-BETA
 if ('serviceWorker' in navigator) {
@@ -74,9 +80,9 @@ if ('serviceWorker' in navigator) {
 }
 
 function isPwa() {
-	
-	if(window.matchMedia('(display-mode: standalone)').matches)
-	return true;
+
+	if (window.matchMedia('(display-mode: standalone)').matches)
+		return true;
 	else return false;
-	
+
 }

@@ -6,8 +6,8 @@ for (i = 0; i < DEBUG_URLS.length; i++) {
         debug = true;
 }
 
-HTTP_PAGE = ["live", "tv-desk", "chunwanlive"];
 // 跳转https
+HTTP_PAGE = ["live", "tv-desk", "chunwanlive"];
 if (debug == false) {
     FORCEHTTP = false;
     for (i = 0; i < HTTP_PAGE.length; i++) {
@@ -21,6 +21,15 @@ if (debug == false) {
     if (window.location.protocol == "https:" & FORCEHTTP == true)
         window.location.href = "http://" + window.location.host + window.location.pathname + window.location.search;
 
+}
+// 判断不需要顶栏和底栏的页面
+NOHEADER_PAGE=["noheader=true","pwastart"];
+noheader=false;
+for (i = 0; i < NOHEADER_PAGE.length; i++) {
+    if ((window.location.pathname+window.location.search).match(NOHEADER_PAGE[i]) != null) {
+        noheader = true;
+        break;
+    }
 }
 
 // 广告代码
