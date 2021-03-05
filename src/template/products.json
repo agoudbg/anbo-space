@@ -29,7 +29,7 @@
                     "page_url": "http://v.anbo.space",
                     "icon": "https://junbo.wang/src/img/website-icons/v.anbo.space.png",
                     "slug": "“内部资料”聚集地，能拿多少看关系。",
-                    "describe": "有着充足的节目录像和“内部资源”，229视频库为您带来了绝佳的视频体验。无论是在线观看还是快捷下载，更或者是发布视频，都可以被轻松完成。<br />“内部资料”指在网络上不易获取的公开资料，并非通过不正当渠道获得的资料。",
+                    "describe": "有着充足的节目录像和“内部资源”，229视频库为您带来了绝佳的视频体验。无论是在线观看还是快捷下载，更或者是发布视频，都可以被轻松完成。<br />* “内部资料”指在网络上不易获取的公开资料，并非通过不正当渠道获得的资料。",
                     "tag": "video_center",
                     "hot": true,
                     "available": true,
@@ -230,7 +230,7 @@
                     "operation": "加入",
                     "developer": "0",
                     "img": [],
-                    "dtype": "Qq群",
+                    "dtype": "QQ群",
                     "djrx": "需要拥有QQ账号。"
                 },
                 {
@@ -262,8 +262,30 @@
                     "operation": "加入",
                     "developer": "3",
                     "img": [],
-                    "dtype": "Qq群",
+                    "dtype": "QQ群",
                     "djrx": "需要拥有QQ账号。"
+                }
+            ]
+        },
+        {
+            "name": "第三方网站推荐",
+            "describe": "出于他们提供了优质的服务，本站单方面推荐这些网站。本站不对其提供的服务负责。如这些网站的管理者对此有异议，请通过邮件与我们联系。",
+            "innerproducts": [
+                {
+                    "name": "中文寻星",
+                    "third_party": true,
+                    "page_url": "http://www.playtv.com.cn/",
+                    "icon": "/live/zlz.png",
+                    "slug": "中国地区上空卫星电视接收寻星参数。",
+                    "describe": "中国地区上空卫星电视接收参数,最老牌,最新,最准确卫星电视参数。",
+                    "tag": "fcxlz",
+                    "hot": false,
+                    "available": true,
+                    "operation": "访问",
+                    "developer": "",
+                    "img": [],
+                    "dtype": "WEB应用",
+                    "djrx": "需要网络浏览器。"
                 }
             ]
         }
@@ -284,6 +306,10 @@
         "3": {
             "name": "N02铺路机",
             "icon": "https://p.pstatp.com/origin/1382100032b8c22b132c4"
+        },
+        "3rdparty": {
+            "name": "第三方服务提供商",
+            "icon": "/live/zlz.png"
         }
     }
 }
