@@ -82,7 +82,7 @@ function calc() {
 		resultbox.innerHTML += "每";
 	else
 		resultbox.innerHTML += "平均每月 " + workingDates + " ";
-	resultbox.innerHTML += "天在央视频：<br />• 签到";
+	resultbox.innerHTML += "天在央视频：<br />• 签到 ";
 	if (videoPerDayInbox.value != 0)
 		resultbox.innerHTML += "<br />• 观看视频 " + videoPerDayInbox.value + " 次  ";
 	if (tvPerDayInbox.value != 0)
@@ -90,7 +90,7 @@ function calc() {
 	if (livePerDayInbox.value != 0)
 		resultbox.innerHTML += "<br />• 观看直播 " + livePerDayInbox.value + " 次  ";
 	if (followPerDayInbox.value != 0)
-		resultbox.innerHTML += "<br />• 关注央视频号 " + followPerDayInbox.value + " 次  ";
+		resultbox.innerHTML += "<br />• 关注央视频号 " + followPerDayInbox.value + " 次";
 	if (otherInbox.value != 0)
 		resultbox.innerHTML += "，<br />并且每日通过其他途径获取或消耗 " + otherInbox.value + " 积分";
 	resultbox.innerHTML += "，那么你将在"
