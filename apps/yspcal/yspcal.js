@@ -107,8 +107,7 @@ function calc() {
 function copy() {
 	let input = document.createElement('input')
 	input.setAttribute('readonly', 'readonly') // 防止手机上弹出软键盘
-	input.setAttribute('value', "安播空间的央视频积分计算器告诉我，" + resultbox.innerHTML.replace(/<br>/g, `
-`).replace(/你/g, "我") + "你也快到 https://anbo.space/apps/yspcal 算算吧！") // txval 为所需复制的值 变量 或者 写死
+	input.setAttribute('value', "安播空间的央视频积分计算器告诉我，" + resultbox.innerHTML.replace(/<br>/g, "\n").replace(/你/g, "我") + "你也快到 https://anbo.space/apps/yspcal 算算吧！") // txval 为所需复制的值 变量 或者 写死
 	document.body.appendChild(input)
 	input.select()
 	document.execCommand('copy')
