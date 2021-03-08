@@ -82,7 +82,7 @@ function calc() {
 		resultbox.innerHTML += "每";
 	else
 		resultbox.innerHTML += "平均每月 " + workingDates + " ";
-	resultbox.innerHTML += "天在央视频：<br />• 签到 ";
+	resultbox.innerHTML += "天在央视频：<br />• 签到  ";
 	if (videoPerDayInbox.value != 0)
 		resultbox.innerHTML += "<br />• 观看视频 " + videoPerDayInbox.value + " 次  ";
 	if (tvPerDayInbox.value != 0)
