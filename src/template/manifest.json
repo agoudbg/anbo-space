@@ -8,9 +8,19 @@
             "sizes": "148x148"
         },
         {
-            "src": "/src/img/icon-files/o.png",
+            "src": "/src/img/icon-files/onr800.png",
             "type": "image/png",
-            "sizes": "1075x1076"
+            "sizes": "800x800"
+        },
+        {
+            "src": "/src/img/icon-files/onr500.png",
+            "type": "image/png",
+            "sizes": "500x500"
+        },
+        {
+            "src": "/src/img/icon-files/onr100.png",
+            "type": "image/png",
+            "sizes": "100x100"
         }
     ],
     "start_url": "/pwa-start.html",
